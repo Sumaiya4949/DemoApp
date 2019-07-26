@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo Calculator</title>
+       <script language = "javascript" type="text/javascript">
+           <!--
+              
+           
+           function Addition(){
+                num1=document.getElementById("firstNumber").value;  
+                num2=document.getElementById("secondNumber").value;
+               document.getElementById("result").innerHTML=num1+num2;
+           }
+           function Subtraction(){
+                num1=document.getElementById("firstNumber").value;
+               num2=document.getElementById("secondNumber").value;
+               document.getElementById("result").innerHTML=num1 - num2;
+           }
+           
+           function Multiplication(){
+                num1=document.getElementById("firstNumber").value;
+               num2=document.getElementById("secondNumber").value;
+               document.getElementById("result").innerHTML=num1 * num2;
+           }
+           function Division(){
+                num1=document.getElementById("firstNumber").value;
+               num2=document.getElementById("secondNumber").value;
+               document.getElementById("result").innerHTML=num1 / num2;
+           }
+               
+               
+               
+               //-->
+        </script>
+    </head>
+
+    <body>
+
+        
+        <div class="container">
+            <h1 id="title">Calculator</h1>
+            <div class="formDiv">
+                <form id="form">
+                    <input type="number" id="firstNumber"/>
+                    <input type="number" id="secondNumber"/>
+                    <br><br>
+                    <input type="button" onclick="Addition()" value="Addition">
+                    <input type="button" onclick="Subtraction()" value="Subtraction">
+                    <input type="button" onclick="Multiplication()" value="Multiplication">
+                    <input type="button" onclick="Division()" value="Division">
+                </form>
+                <p>The result is:<br>
+                <span id="result"></span></p>
+            </div>
+        </div>
+    </body>
+</html>
